@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+.menuBar{
+    color:#A5A5AF;
+    display: flex;
+    margin-top: 20px;
+}
+.logo{
+    flex: 1;
+    font-family: 'Pushster', cursive;
+}
+.menuBarList{
+    list-style-type: none;
+    flex: 4;
+    font-size: 18px;
+}
+.menuBarList li{
+   display: inline-block;
+    padding: 0 2%;
+}
+.menuBarList li a{
+   text-decoration: none;
+    color:#A5A5AF;
+    cursor: pointer;
+}
+
+.header{
+    height: 80vh;
+    background-color: #BFD8D2;
+    color:#ffffff;
+}
+.header-flex{
+    height: 100%;
+}
+.description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-name{
+     text-transform: capitalize;
+    color: #DF744A;
+}
+.header-txt{
+     color:#57BC90;  
+}
+.header-desc{
+     font-size: 20px;  
+}
+
+.profile-bk img{
+    width: 100%;
+    height: 100%;
+}
+.work{
+    padding: 50px 0;
+}
+.work-heder{
+    color:#A5A5AF ;
+    text-transform: capitalize;
+    font-size: 28px;
+    padding: 0 0 30px 0;
+    text-align: center;
+
+}
+.grid{
+    display: grid;
+    grid-gap: 10px;
+}
+.work-card{
+    position: relative;
+    border-radius: 10%;
+    
+}
+.work-card img{
+    width:100%;
+    height: auto;
+    border-radius: 10%;
+}
+.overlay{
+    border-radius: 10%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index:5;
+}
+.overlay:hover{
+    filter: blur(28px);
+    -webkit-filter:blur(28px);
+    z-index: 0;
+}
+.card-title{
+  position: absolute;
+  text-align: center;
+    top:50%;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  color: #DF744A;
+  z-index: 6;
+    visibility:hidden;
+    opacity:0;
+    transition: opacity .5s ,visibility 0.5s;
+  /**  background-color: #FEDCD2;**/
+}
+.work-card:hover .card-title{
+    visibility: visible;
+    opacity:1;
+}
+
+.card-title a{
+  color: #DCB239; 
+  text-decoration: underline;
+  font-weight: bold;
+}
+.card-title a:hover{
+    color:#fff;
+}
+
+.about_me{
+    padding: 60px 0;
+}
+.about_dev{
+    display: flex;
+}
+.me_pic{
+    flex: 1;
+    background-color:#FEDCD2; 
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.me_pic img{
+    width: 100%;
+    height: auto;
+}
+.me_written{
+    flex:1;
+    text-align: left;
+    font-size: 18px;
+    color: #A5A5AF;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.about-par{
+    margin-top: 30px;
+}
+
+.contact{
+    padding: 50px 0;
+    text-align: center;
+}
+.header-contact{
+    padding-bottom: 30px;
+    color: #A5A5AF;
+}
+.contact-info{
+    display: grid;
+}
+.conact-txt h4{
+ font-size: 25px;
+ margin-bottom: 10px;
+ text-transform: capitalize;
+ font-family: 'Playball', cursive;  
+}
+.conact-txt p{
+font-size: 14px;
+ margin: 15px 0;
+ color:#4e4d4d;
+ text-transform: capitalize;
+ font-family: 'Open Sans', sans-serif;
+ letter-spacing: 1px;
+ line-height: 25px;
+}
+.contact-box input{
+    width:100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 50px
+}
+.contact-box input{
+    width:100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 50px
+}
+.contact-box .txtarea{
+    width:100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.sub-btn{
+    border: 0;
+    background-color: #DCB239;
+    color: #000;
+    font-size: 24px;
+    width:100%;
+    padding: 14px;
+    border-radius: 10px
+}
+.footer{
+    padding: 50px 0;
+}
+footer{
+ background-color: #000;
+}
+.footer-section{
+    display: flex;
+    background-color: #000;
+    padding: 60px 0;
+}
+.footer-txt{
+    color:darkgray;
+    font-size: 17px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+}
+.footer-icon{
+    text-align: center;
+}
+.footer-logo{
+    color: #fff;
+     font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Playball', cursive;
+    margin-bottom: 20px;
+}
+.footer-icon ul{
+    list-style: none;
+}
+.footer-icon ul li{
+    display: inline-block;
+    margin-right: 6px;
+}
+.facebook{
+    background-color: blue;
+}
+.twitter{
+    background-color:cyan;
+}
+.youtube{
+    background-color: red
+}
+.footer-icon ul li i{
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.float-btn{
+    text-align: center;
+    margin: 30px 0;
+}
+.float-btn a {
+    color:#fff;
+    font-size: 35px;
+}
+.copy-div {
+    text-align: center;
+    padding: 30px 0;
+}
+.cpoyright{
+    text-transform: capitalize;
+    color:#fff;
+}
+.cpoyright span{
+    color:red;
+}
+
+

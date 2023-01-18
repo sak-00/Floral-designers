@@ -1,0 +1,37 @@
+.menuBar{
+    flex-direction: row;
+}
+.menuBarList{
+    text-align: end;
+}
+.header-flex{
+    display: flex;
+}
+.description{
+    flex: 1;
+}
+.contact-info{
+    grid-template-columns: 30% 70%;
+}
+.profile-bk{
+    flex: 1;
+}
+.me_written{
+    padding-right: 30px;
+}
+.grid{
+    grid-template-columns: repeat(3,1fr);
+}
+.about_dev{
+    flex-direction: row;
+}
+.footer-section{
+    flex-direction: row;
+}
+.footer-txt{
+    flex:2;
+    margin-right: 60px;
+}
+.footer-icon{
+    flex: 1;
+}

@@ -1,0 +1,49 @@
+.menuBar{
+    flex-direction:column;
+}
+.menuBarList{
+    text-align: center;
+    padding-left: 3px;
+}
+.logo{
+  text-align: center;
+}
+.profile-bk{
+    display: none;
+}
+.header-flex{
+    display: block;
+}
+.description{
+    text-align: center;
+}
+.grid{
+    grid-template-columns: repeat(1,1fr);
+}
+.about_dev{
+    flex-direction: column;
+}
+.me_pic{
+    order: 1;
+}
+.me_written{
+    order: 2;
+    text-align: justify;
+    padding-right: 0px;
+}
+.contact-info{
+    grid-template-rows: 35% 65%;
+}
+.footer-section{
+    flex-direction: column;
+}
+.footer-txt{
+    flex:1;
+    order: 2;
+    text-align: justify;
+     margin-right: 0px;
+}
+.footer-icon{
+    flex: 1;
+    order: 1;
+}
